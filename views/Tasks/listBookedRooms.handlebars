@@ -1,0 +1,43 @@
+<div id="user-booked-rooms-bg" class="container-fluid mt-5 pt-5 pb-5 bg-light">
+    <h1 class='h1 mt-5 text-center'>
+        {{#if user.admin}}
+            All
+        {{else}}
+            {{user.first_name}}'s
+        {{/if}} 
+            Booked Rooms List
+    </h1>
+
+    <div class="container">
+        <table class="table rounded">
+            <thead>
+                <tr>
+                    <th scope="col">ROOM NAME</th>
+                    {{#if user.admin}}
+                        <th scope="col">BOOKED BY</th>
+                    {{/if}}
+                    <th scope="col">ACTIONS</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each bookINFO.rooms}}
+                    <tr>
+                        <td>{{this.roomTitle}}</td>
+                        {{#if ../user.admin}}
+                            <td>{{this.userEmail}}</td>
+                        {{/if}}
+                        <td>
+                            <form method="POST" action="/task/deleteBook/{{this.roomTitle}}?_method=DELETE">
+                                <input role="button" type="submit" class="btn btn-danger btn-sm" value="Cancel Booking" data-id="{{this.id}}" data-title="{{this.title}}">
+                            </form>
+                        </td>
+                    </tr>
+                {{else}}
+                    <tr>
+                        <td>No Rooms were booked yet ...</td>
+                    </tr>
+                {{/each}}                
+            </tbody>
+        </table>
+    </div>
+</div>

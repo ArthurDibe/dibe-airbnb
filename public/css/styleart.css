@@ -1,0 +1,350 @@
+.clear
+{
+    clear: both;
+}
+
+.center
+{
+    width: 50px;
+    margin: 0 auto;
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+body
+{
+    background-color: gainsboro;
+    overflow-x: hidden;
+    font-family: 'Comfortaa', cursive !important;
+}
+
+#header
+{
+    box-shadow: 0 6px 20px 0 #00000050, 0 6px 20px 0 #00000042;
+}
+
+section.about
+{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    overflow: hidden;   /* To not show contents while they are out of the container */
+    background-image: url("https://www.transparenttextures.com/patterns/arches.png");
+}
+
+.about a:hover
+{
+    background-color: #ff3b5c !important;
+    color:white !important;
+}
+
+.modalX:hover path
+{
+    fill: #ff3b5c !important;
+}
+
+.information
+{
+    margin: 0px;
+    height: 420px;
+}
+
+.infoBlock
+{
+    padding-top: 20px;
+    height: 420px;
+    transition-property: height;
+    transition-duration: 1s;
+    transition-delay: 0s;
+    text-align: center;
+
+    overflow: hidden;   /* To not show contents while they are out of the container */
+}
+
+.infoBlock iframe
+{
+    width: 560px;
+    height: 315px;
+}
+
+
+#login-page {
+    background: url('https://wallpapercave.com/wp/LzrJkez.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 79vh;
+}
+
+#room-list-section
+{
+    background: url('https://visme.co/blog/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-031.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#registration-section
+{
+    background: url('https://images.unsplash.com/photo-1481277542470-605612bd2d61?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=995&q=80') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#room-list-section #title-room-page
+{
+    margin: 50px 0 30px 0;
+    padding: 118px 0 0 0;
+}
+
+#rooms
+{
+    font-size: 15px;
+}
+
+#rooms .card:hover
+{
+    -webkit-box-shadow: 0px 17px 29px 1px rgba(0,0,0,0.38);
+    -moz-box-shadow: 0px 17px 29px 1px rgba(0,0,0,0.38);
+    box-shadow: 0px 17px 29px 1px rgba(0,0,0,0.38);
+    cursor: pointer !important;
+
+    transition-property: box-shadow;
+    transition-duration: 0.5s;
+    transition-delay: 0s;
+}
+
+.button-airbnb, .closeModal
+{
+    background-color: #ff4a68 !important;
+    color:white !important;
+}
+
+.button-airbnb:hover
+{
+    background-color: #df2948 !important;
+}
+
+#search-section
+{
+    background: url('https://images.pexels.com/photos/2131772/pexels-photo-2131772.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+}
+
+#promotion-section
+{
+    background-image: linear-gradient(to bottom, #b194a9 0%, #fef9d7 100%);
+}
+
+#admin-dashboard-bg
+{
+    background: url('https://images.unsplash.com/photo-1470217957101-da7150b9b681?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#user-dashboard-bg
+{
+    background: url('https://images.unsplash.com/photo-1511300276866-a284652b55c3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 72vh;
+}
+
+#user-booked-rooms-bg
+{
+    background: url('https://images.unsplash.com/photo-1578146885311-70223a6e6b09?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#user-booked-rooms-bg table
+{
+    background-color: rgba(0, 0, 0, 0.1);
+    color: whitesmoke;
+}
+
+#admin-dashboard-bg .row, #admin-dashboard-bg h1, #admin-dashboard-bg a,#user-dashboard-bg .row, #user-dashboard-bg h1, #user-dashboard-bg a
+{
+	margin: 0 auto;
+}
+
+#page404
+{
+    background: url('https://images.unsplash.com/photo-1500964757637-c85e8a162699?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1978&q=80') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    margin-top: 80px;
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+
+.carousel-inner img {
+    width: 100%;
+    max-width: 500px;
+}
+
+nav
+{
+    /* font-family: Cairo, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif; */
+    font-size: 20px;
+    font-family: 'Comfortaa', cursive !important;
+}
+
+nav li
+{
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+nav a
+{
+    color: #000000 !important;
+}
+
+nav a:hover
+{
+    cursor: pointer !important;
+    color: #ff3b5c !important;
+}
+
+#form-border
+{
+    box-shadow: 0 6px 20px 5px #00000077; /*h-position   v-position   blur-size   radius-size   color*/
+}
+
+svg[onclick="eye()"]:hover
+{
+    cursor: pointer !important;
+}
+
+
+/*********************** SOCIAL LINKS ***************************/
+
+ul.social-network {
+	list-style: none;
+	display: inline;
+	margin-left:0 !important;
+	padding: 0;
+}
+ul.social-network li {
+	display: inline;
+	margin: 0 5px;
+}
+
+.social-network a.icoGithub:hover {
+	background-color: rgb(22, 22, 22);
+}
+
+.social-network a.icoRss:hover {
+	background-color: #F56505;
+}
+.social-network a.icoFacebook:hover {
+	background-color:#3B5998;
+}
+.social-network a.icoInstagram:hover {
+	background: rgb(131,58,180);
+    background: linear-gradient(219deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 78%, rgba(252,176,69,1) 100%);
+}
+.social-network a.icoWhatsapp:hover {
+	background-color: forestgreen;
+}
+.social-network a.icoTwitter:hover {
+	background-color:#33ccff;
+}
+.social-network a.icoGoogle:hover {
+	background-color:#BD3518;
+}
+.social-network a.icoVimeo:hover {
+	background-color:#0590B8;
+}
+.social-network a.icoLinkedin:hover {
+	background-color:#007bb7;
+}
+.social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
+.social-network a.icoGoogle:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i {
+	color:#fff;
+}
+a.socialIcon:hover, .socialHoverClass {
+	color:#44BCDD;
+}
+
+.social-circle li a {
+	display:inline-block;
+	position:relative;
+	margin:0 auto 0 auto;
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;
+	border-radius:50%;
+	text-align:center;
+	width: 50px;
+	height: 50px;
+	font-size:20px;
+	background-color: #D3D3D3;
+}
+.social-circle li i {
+	margin:0;
+	line-height:50px;
+	text-align: center;
+}
+
+/* .social-circle li a:hover i, .triggeredHover {
+	-moz-transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	-ms--transform: rotate(360deg);
+	transform: rotate(360deg);
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	-o-transition: all 1s;
+	-ms-transition: all 1s;
+	transition: all 1s;
+} */
+.social-circle i {
+	color: #fff;
+	-webkit-transition: all 0.8s;
+	-moz-transition: all 0.8s;
+	-o-transition: all 0.8s;
+	-ms-transition: all 0.8s;
+	transition: all 0.8s;
+}
+
+
+/************************ CUSTOM SCROLLBAR ******************************/
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+   
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgba(136, 136, 136, 0.247); 
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}

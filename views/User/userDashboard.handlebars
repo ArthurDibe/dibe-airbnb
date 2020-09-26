@@ -1,0 +1,14 @@
+
+<div id="user-dashboard-bg" class="container-fluid mt-5 pt-5 pb-5 bg-light">
+    {{#if user}}
+        <div class="row mt-5 mb-5">
+            <h1 class="h1">What do you need master {{user.lastName}} ?</h1>
+        </div>
+
+        {{> userLinks}}
+
+    {{else}}
+        <h1>Hi! Who are you ??</h1>
+
+    {{/if}}
+</div>

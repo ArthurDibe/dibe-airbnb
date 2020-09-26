@@ -1,0 +1,62 @@
+
+<section id="room-list-section" class="container-fluid">
+
+    <h1 id="title-room-page" class='display-4 text-center'>
+        Find the place of your dreams{{#if bookINFO.whereIS}} at <u>{{bookINFO.whereIS}}</u>{{/if}}!
+    </h1>
+    </div>
+
+
+    <div id="rooms" class="container-fluid">
+        <div class="row">  
+            {{#each bookINFO.rooms}}
+                <div class="col-12 col-md-4 col-lg-3 mb-4 rounded">
+                    <figure class="card" onclick='roomPopUp("{{../user.email}}","{{this.roomTitle}}","{{this.price}}","{{this.description}}","{{this.roomPic}}","{{this.location}}","{{this.checkIN}}","{{this.checkOUT}}","{{this.guestNUMB}}")' title="Click to Book the Room">
+                        <img height="250px" class="card-img-top" src="/uploads/{{this.roomPic}}" alt="room">
+                        <figcaption class="card-body">
+                                <h4 class="card-title">{{this.roomTitle}}</h4>
+                                <p class="float-right">CAD<b>{{this.price}}</b>/night<br></p>
+                                <div class="clear"></div>
+                                <p>CLICK FOR DESCRIPTION and BOOKING</p>
+                                <div class="clear"></div>
+                                <br>
+                                <p><u>Location: <b>{{this.location}}</b></u></p>
+                        </figcaption>
+                    </figure>
+                </div>
+            {{else}}
+                <h3>No Rooms Registered</h3>
+            {{/each}}
+        </div>
+    </div>
+</section>
+
+<!-- ########################### The Modal ########################################## -->
+<div class="modal fade" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title"></h4>
+        <button type="button" class="modalX close" data-dismiss="modal">
+            <svg height="22px" class="svg-icon" viewBox="0 0 20 20">
+                <path fill="grey" d="M11.469,10l7.08-7.08c0.406-0.406,0.406-1.064,0-1.469c-0.406-0.406-1.063-0.406-1.469,0L10,8.53l-7.081-7.08
+                c-0.406-0.406-1.064-0.406-1.469,0c-0.406,0.406-0.406,1.063,0,1.469L8.531,10L1.45,17.081c-0.406,0.406-0.406,1.064,0,1.469
+                c0.203,0.203,0.469,0.304,0.735,0.304c0.266,0,0.531-0.101,0.735-0.304L10,11.469l7.08,7.081c0.203,0.203,0.469,0.304,0.735,0.304
+                c0.267,0,0.532-0.101,0.735-0.304c0.406-0.406,0.406-1.064,0-1.469L11.469,10z"></path>
+            </svg>
+        </button>
+      </div>
+
+      <!-- Modal body -->
+      <div id="roomModalBody" class="modal-body"></div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+            <a id="bookRoom" class="button-airbnb btn" role="button">Book Room</a>
+      </div>
+
+    </div>
+  </div>
+</div>

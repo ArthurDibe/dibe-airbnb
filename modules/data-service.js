@@ -8,7 +8,7 @@ require("dotenv").config({path:'./config/keys.env'});
 // Function to initialize DATABASE
 const initDatabase = ()=>
 {
-    const MONGO_DB_URL = `mongodb+srv://${process.env.MONGO_DB_USERNAME}:${process.env.MONGO_DB_PASSWORD}@dibe-airbnb-2uva3.mongodb.net/${process.env.MONGO_DB_DATABASE_NAME}?retryWrites=true&w=majority`;
+    const MONGO_DB_URL = `mongodb+srv://${process.env.MONGO_DB_USERNAME}:${process.env.MONGO_DB_PASSWORD}@cluster0.mwjdf.mongodb.net/${process.env.MONGO_DB_DATABASE_NAME}?retryWrites=true&w=majority`;
 
     mongoose.set('useCreateIndex', true); // fixing the deprecate from mongoose
     mongoose.connect(MONGO_DB_URL, {useNewUrlParser: true, useUnifiedTopology: true})
